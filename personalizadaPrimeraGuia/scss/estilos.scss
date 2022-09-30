@@ -1,0 +1,63 @@
+$principal: rgb(64, 129, 69);
+
+$primary: $principal;
+$enable-shadow: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.btn-primary {
+    border-bottom: 3px solid rgba(10, 9, 9, 0.9)
+}
+
+.custom-class {
+    display: none;
+}
+
+@include media-breakpoint-up(xs) {
+    .custom-class {
+        display: block;
+        background-image: url(https://cn.i.cdn.ti-platform.com/content/479/showpage/ben-10/es/ben10-200x200.png);
+        height: 300px;
+    }
+    .imagenpa {
+        background-image: url(https://cn.i.cdn.ti-platform.com/content/1155/showpage/regular-show/ae/regularshow-200x200.png);
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class {
+        background-image: url(https://cn.i.cdn.ti-platform.com/content/1155/showpage/regular-show/ae/regularshow-200x200.png);
+        height: 200px;
+    }
+    .imagenpa {
+        background-image: url(https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg);
+        height: 100px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class {
+        background-image: url(https://img.freepik.com/vector-gratis/frontera-fuego-verde-realista-imagenes-predisenadas-llama-ardiente_107791-1038.jpg?w=2000);
+        height: 400px;
+    }
+    .imagenpa {
+        background-image: url(https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg);
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        background-image: url(https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg);
+        height: 200px;
+    }
+    .imagenpa {
+        background-image: url(https://cn.i.cdn.ti-platform.com/content/1155/showpage/regular-show/ae/regularshow-200x200.png);
+        height: 100px;
+    }
+}
